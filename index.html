@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <title>Portfolio</title>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">GANESH_A</p>
+            <span><i class="fa-solid fa-hat-cowboy"></i></span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+            </div>
+            <div class="featured-name">
+                <p> Hello I'm <span class="typedText"></span></p>
+            </div>
+        
+           
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="2.jpg" alt="avatar">
+            </div>
+          </div>
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section id="about" class="section_about-me">
+        <div class="container">
+            <div class="row">
+                <div class="column_1">
+                    <img src=".jpg" alt="">
+                </div>
+                <div class="column_2">
+                    <h2 class="sub_title">About Me</h2>
+                    <div class="tabs_heading">
+                        <p class="tab_link active" onclick="opentab('education')"><h1>Education</h1></p>
+                
+                    <div id="education" class="tab_content active_content">
+                        <ul>
+                            <li>
+                                <span>BCA</span><br>
+                                Bachelor of Computer Applications<br>
+                                Christ College of Science and Management, Alambady, Malur, Karnataka<br>
+                                2022 - 2025
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="tab_link active" onclick="opentab('education')"><h1>Experience</h1></p>
+                    <div id="experience" class="tab_content">
+                        <ul>
+                            <li>
+                                <span>Internship at Prodigy InfoTech</span><br>
+                                Web Developer Intern<br>
+                                August 2024 - September 2024<br>
+                                Worked on building responsive web applications using HTML, CSS, and JavaScript. Developed interactive features and optimized websites for better performance.
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="tab_link active" onclick="opentab('education')"><h1>Skills</h1></p>
+                    <div id="skills" class="tab_content">
+                        <ul>
+                            <li>
+                                <span>Front-End Development</span><br>
+                                HTML, CSS, JavaScript, Responsive Design
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="project 1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Shoe World</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/GANESH-A08/PRODIGY_WD_01'"
+                >
+                  GITHUB
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="project 2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Stop Watch</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/GANESH-A08/PRODIGY_WD_02'"
+                >
+                GITHUB
+                </button>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+       </section>
+
+    </main>
+    <section id="contact" class="section_contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact_left">
+              <h2 class="sub_title">Contact</h2>
+          <p><i class="fas fa-paper-plane"></i>ganeshgani0046@gmail.com</p>
+         
+              <div class="social_media">
+            
+              </div>
+        
+            </div>
+            <div class="contact_right">
+              <div class="contact_form">
+                <form name="submit-to-google-sheet">
+                  <input
+                    type="text"
+                    name="Name"
+                    placeholder="Your Name"
+                    required
+                  >
+                  <input
+                    type="email"
+                    name="Email"
+                    placeholder="Your Email"
+                    required
+                  >
+                  <textarea
+                    name="Message"
+                    rows="6"
+                    placeholder="Your Message"
+                  ></textarea>
+                  <button type="submit" class="btn btn2">Send </button>
+                </form>
+              </div>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+      
+        </div>
+       
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">GANESH_A</a></p>
+        </div>
+    </footer>
+
+    </div>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="index.js"></script>
+</body>
+</html>
+
